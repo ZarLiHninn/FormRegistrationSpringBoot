@@ -1,25 +1,39 @@
 package com.demo.example.model;
 
-import java.util.List;
-
 public class Student {
 
-	private Grade grade;
-	private List<String> subjects;
-	private String name;
-	private String email;
-	private String city;
-	private String township;
-	private List<String> day;
-	private List<String> month;
-	private List<String> year;
+	private String grade;
 
-	public List<String> getSubjects() {
-		return subjects;
+	private String subject;
+
+	private String name;
+
+	private String email;
+
+	private String city;
+
+	private String township;
+
+	private String birthDay;
+
+	private String birthMonth;
+
+	private String birthYear;
+
+	public String getGrade() {
+		return grade;
 	}
 
-	public void setSubjects(List<String> subjects) {
-		this.subjects = subjects;
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
 
 	public String getName() {
@@ -54,35 +68,27 @@ public class Student {
 		this.township = township;
 	}
 
-	public List<String> getDay() {
-		return day;
+	public String getBirthDay() {
+		return birthDay;
 	}
 
-	public void setDay(List<String> day) {
-		this.day = day;
+	public void setBirthDay(String birthDay) {
+		this.birthDay = birthDay;
 	}
 
-	public List<String> getMonth() {
-		return month;
+	public String getBirthMonth() {
+		return birthMonth;
 	}
 
-	public void setMonth(List<String> month) {
-		this.month = month;
+	public void setBirthMonth(String birthMonth) {
+		this.birthMonth = birthMonth;
 	}
 
-	public List<String> getYear() {
-		return year;
+	public String getBirthYear() {
+		return birthYear;
 	}
 
-	public void setYear(List<String> year) {
-		this.year = year;
-	}
-
-	public Grade getGrade() {
-		return grade;
-	}
-
-	public void setGrade(Grade grade) {
-		this.grade = grade;
+	public void setBirthYear(String birthYear) {
+		this.birthYear = birthYear;
 	}
 }
