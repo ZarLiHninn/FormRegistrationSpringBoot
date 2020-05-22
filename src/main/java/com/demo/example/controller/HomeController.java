@@ -26,6 +26,7 @@ public class HomeController {
 	public String initHome() {
 		return "home";
 	}
+
 	@GetMapping(value = "/form")
 	public String initStudentForm(ModelMap model) {
 		initForm(model);

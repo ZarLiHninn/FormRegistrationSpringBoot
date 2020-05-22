@@ -18,8 +18,8 @@ public class StudentFormInitServiceImpl implements StudentFormInitService {
     @Override
     public StudentFormInitOutput init() {
         // 誕生年は （表示する年 - 30） ~ 表示する年 まで
-        Integer fromYear = LocalDate.now().getYear() - termForBirthYear;
-        Integer toYear   = LocalDate.now().getYear();
+        int          fromYear    = LocalDate.now().getYear() - termForBirthYear;
+        int          toYear      = LocalDate.now().getYear();
         Set<Integer> birthYears  = IntStream.rangeClosed(fromYear, toYear).boxed().collect(Collectors.toSet());
         Set<Integer> birthDays   = IntStream.rangeClosed(1, 31).boxed().collect(Collectors.toSet());
         Set<Integer> birthMonths = IntStream.rangeClosed(1, 12).boxed().collect(Collectors.toSet());

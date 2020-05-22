@@ -14,11 +14,11 @@ public class Student {
 
 	private String township;
 
-	private String birthDay;
+	private int birthDay;
 
-	private String birthMonth;
+	private int birthMonth;
 
-	private String birthYear;
+	private int birthYear;
 
 	public String getGrade() {
 		return grade;
@@ -68,27 +68,27 @@ public class Student {
 		this.township = township;
 	}
 
-	public String getBirthDay() {
+	public int getBirthDay() {
 		return birthDay;
 	}
 
-	public void setBirthDay(String birthDay) {
+	public void setBirthDay(int birthDay) {
 		this.birthDay = birthDay;
 	}
 
-	public String getBirthMonth() {
+	public int getBirthMonth() {
 		return birthMonth;
 	}
 
-	public void setBirthMonth(String birthMonth) {
+	public void setBirthMonth(int birthMonth) {
 		this.birthMonth = birthMonth;
 	}
 
-	public String getBirthYear() {
+	public int getBirthYear() {
 		return birthYear;
 	}
 
-	public void setBirthYear(String birthYear) {
+	public void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 	}
 }
