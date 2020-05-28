@@ -1,6 +1,12 @@
 package com.demo.example.model;
 
+import java.util.Date;
 import java.util.List;
+
+import com.demo.example.constant.Grade;
+import com.demo.example.constant.Subject;
+
+
 
 public class Student {
 
@@ -8,11 +14,9 @@ public class Student {
 	private List<String> subjects;
 	private String name;
 	private String email;
-	private String city;
-	private String township;
-	private List<String> day;
-	private List<String> month;
-	private List<String> year;
+	private Subject subject;
+	
+	private Date birthDate;
 
 	public List<String> getSubjects() {
 		return subjects;
@@ -38,44 +42,23 @@ public class Student {
 		this.email = email;
 	}
 
-	public String getCity() {
-		return city;
+
+    
+
+	public Subject getSubject() {
+		return subject;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
+	public void setSubject(Subject subject) {
+		this.subject = subject;
 	}
 
-	public String getTownship() {
-		return township;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setTownship(String township) {
-		this.township = township;
-	}
-
-	public List<String> getDay() {
-		return day;
-	}
-
-	public void setDay(List<String> day) {
-		this.day = day;
-	}
-
-	public List<String> getMonth() {
-		return month;
-	}
-
-	public void setMonth(List<String> month) {
-		this.month = month;
-	}
-
-	public List<String> getYear() {
-		return year;
-	}
-
-	public void setYear(List<String> year) {
-		this.year = year;
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
 	}
 
 	public Grade getGrade() {

@@ -1,4 +1,4 @@
-package com.demo.example.model;
+package com.demo.example.constant;
 
 public enum Grade {
    A,B,C,D,E
