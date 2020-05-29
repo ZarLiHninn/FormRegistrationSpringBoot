@@ -8,24 +8,19 @@
 	<div th:if="${result != null}">
 		<h1>Result</h1>
 		<div>
-			<h3>Student Name</h3>
-			<p th:text="${result.name}"></p>
+			<p>Student Name : <span th:text="${result.name}"></span></p>
 		</div>
 		<div>
-			<h3>Email</h3>
-			<p th:text="${result.email}"></p>
+			<p>Email : <span th:text="${result.email}"></span></p>
 		</div>
 		<div>
-			<h3>Date of Birth</h3>
-			<p th:text="${result.birthDate}"></p>
+			<p>Date of Birth : <span th:text="${result.birthDate}"></span></p>
 		</div>
 		<div>
-			<h3>Subject</h3>
-			<p th:text="${result.subject}"></p>
+			<p>Subject : <span th:text="${result.subject}"></span></p>
 		</div>
 		<div>
-			<h3>Grade</h3>
-			<p th:text="${result.grade}"></p>
+			<p>Grade : <span th:text="${result.grade}"></span></p>
 		</div>
 	</div>
 	<a th:href="@{/back}">Back</a>

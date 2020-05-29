@@ -1,7 +1,10 @@
 package com.demo.example.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.demo.example.constant.Grade;
 import com.demo.example.constant.Subject;
@@ -15,8 +18,8 @@ public class Student {
 	private String name;
 	private String email;
 	private Subject subject;
-	
-	private Date birthDate;
+	@DateTimeFormat(pattern = "MM/dd/yyyy")
+	private LocalDate birthDate;
 
 	public List<String> getSubjects() {
 		return subjects;
@@ -53,11 +56,11 @@ public class Student {
 		this.subject = subject;
 	}
 
-	public Date getBirthDate() {
+    public LocalDate getBirthDate() {
 		return birthDate;
 	}
 
-	public void setBirthDate(Date birthDate) {
+	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
 	}
 
